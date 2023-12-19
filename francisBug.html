@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student corner</title>
+    <link rel="stylesheet" href="bugless.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left" id="left">
+            <img src="img/hi.jpg" />
+            <!-- <div class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div> -->
+            <ul>
+                <li>Dashboard</li>
+                <li>News</li>
+                <li>CGPA</li>
+                <li>Timetable</li>
+                <li>Past Questions</li>
+                <buttonn class="close" id="close">
+                    Close
+                    </button>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <div id="close">
+                    <i class="fa fa-bars" id="hamburger" aria-hidden="true"></i>
+                </div>
+                <h4>Dashboard</h4>
+                <input type="search" placeholder="search" />
+                <button>New courses</button>
+            </div>
+            <div class="RM">
+                <div class="RMleft">
+                    <h3>Hello Daniel!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio, sit, rem fugiat illum
+                        adipisci ullam repellat officiis sequi tempore nostrum doloremque sunt doloribus sint labore
+                        minima cupiditate architecto. Quo?</p>
+                    <button>View Results</button>
+                </div>
+                <div class="RMright">
+                    <img src="/img/hi.jpg" />
+                </div>
+            </div>
+            <div class="RB">
+                <div class="courses">
+                    <p>Courses</p>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                </div>
+                <!-- <div class="courses">
+                    <p>Courses</p>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                    <div class="course">
+                        <p>
+                            E
+                        </p>
+                        <p>
+                            CSC101
+                        </p>
+                        <button>View</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let close = document.getElementById("close");
+        let left = document.getElementById("left").classList
+        close.addEventListener("click", () => {
+            if (left == "left-mobile") {
+                document.querySelector(".left-mobile").classList.toggle("left");
+            } else {
+                document.querySelector(".left").classList.toggle("left-mobile");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
